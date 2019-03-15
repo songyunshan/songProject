@@ -108,10 +108,6 @@ data = {
 # 	a.找到平均分不足60分的人
 # 	b.找出各科的最高分
 # 	c.算出各科的平均分，再找出各科的学霸
-sum=0
-for value in data.values():
-    print(value)
-    for i in range(1,len(value)):
 
 
 
