@@ -135,6 +135,7 @@ def search(list,item):
 list = [1,3,6,7,10,20]
 print(search(list,10))
 print(search(list,-1))
+print(search(list,6))
 
 
 
