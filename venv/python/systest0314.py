@@ -105,9 +105,52 @@ data = {
     'LuoJin': [98, 65, 100],
     'LiuLaoShi': [77, 97, 65]
 }
-# 	a.找到平均分不足60分的人
-# 	b.找出各科的最高分
-# 	c.算出各科的平均分，再找出各科的学霸
+# a.找到平均分不足60分的人
+# list1=[]
+# list2=[]
+# for key,value in data.items():
+#     sum=0
+#     avg=0
+#     for i in value:
+#         sum=sum+i
+#     avg=sum/len(value)
+#     if avg<60:
+#         list2.append(key)
+# print(list2)
+# b.找出各科的最高分 c.算出各科的平均分，再找出各科的学霸
+
+#7.二分查找
+def search(list,item):
+    low = 0
+    high = len(list)-1
+    while low<=high:
+        mid = int((low + high) / 2)
+        if list[mid]<item:
+            low=mid+1
+        elif list[mid]>item:
+            high=mid-1
+        else:
+            return mid
+    return None
+list = [1,3,6,7,10,20]
+print(search(list,10))
+print(search(list,-1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
